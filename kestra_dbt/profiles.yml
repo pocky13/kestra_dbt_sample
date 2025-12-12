@@ -1,0 +1,10 @@
+kestra_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      disable_transactions: false
+      path: md:dbt_sample?motherduck_token={{ secret('MOTHERDUCK_TOKEN') }}
+      fixed_retries: 1
+      threads: 4
+      timeout_seconds: 300

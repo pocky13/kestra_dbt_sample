@@ -1,0 +1,6 @@
+
+kestra_dbt/target/
+kestra_dbt/dbt_packages/
+kestra_dbt/logs/
+.DS_Store
+.env

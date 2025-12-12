@@ -1,0 +1,6 @@
+id: simple_flow
+namespace: com.example.test
+tasks:
+  - id: hello
+    type: io.kestra.core.tasks.log.Log
+    message: Hello World
